@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="comparison.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="landingFull.html" class="active home">Latitude</a>
+        <div class='nav-2'>
+            <div class="nav-left dropd"></a>
+                <button class="dropbtn">Plots
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropd-content">
+                    <a href="maxTemp.html">Max Temperature</a>
+                    <a href="humidity.html">Humidity</a>
+                    <a href="cloudiness.html">Cloudiness</a>
+                    <a href="windSpeed.html">Wind Speed</a>
+                </div>
+            </div>
+            <a href="comparison.html" class="nav-left margin-right-2">Comparision</a>
+            <a href="table.html" class="nav-left">Data</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+
+    <div class="container-2">
+        <div class="container-inner">
+            <div class="inner-head">Comparison: Latitude vs X</div>
+            <h4>Click any plot to get an in-depth analysis.</h4>
+            <div class="inner-body">
+                <div class="column-left vis-ele">
+                    <h3>vs. Max Temperature</h3>
+                    <img src="City Latitude vs. Max Temperature.png" alt="Temp" style="width:100%">
+                </div>
+                <div class="column-left vis-ele">
+                    <h3>vs. Cloudiness</h3>
+                    <img src="City Latitude vs. Cloudiness.png" alt="Cloud" style="width:100%">
+                </div>
+                <div class="column-right vis-ele">
+                    <h3>vs. Humidity</h3>
+                    <img src="City Latitude vs. Humidity.png" alt="Humidy" style="width:100%">
+                </div>
+                <div class="column-right vis-ele">
+                    <h3>vs. Wind Speed</h3>
+                    <img src="City Latitude vs. Wind Speed.png" alt="W-Speed" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>@Copyright Data Science Bootcamp 2019</footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+</html>
